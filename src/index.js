@@ -14,7 +14,7 @@ app.use(bodyparser.urlencoded({extended: true}));
 app.use(bodyparser.json());
 app.use(cors({origen: '*'}));
 
-
+app.use('/ciudad',require('./routes/Ciudad.route'))
 
 app.listen(app.get('Port'),()=>{
     console.log('Servidor escuchando por el puerto',app.get('Port'))
