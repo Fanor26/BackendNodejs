@@ -1,17 +1,18 @@
 const mongoose = require('mongoose') 
 const {Schema}= mongoose 
-const PrimeroasecSchema = new Schema({ 
-primernombre:String, 
-segundonombre:String,
-tercernombre:String,
-apellidopaterno:String,
-apellidomaterno:String,
 
 
-correomovil:String, 
-contrasena: String, 
+
+const VacunadosSchema = new Schema({ 
+nombres:{type:String, required: [true, 'Nombre Obiigatorio']} ,
+apellidos:String,
+ciudad:String,
+Correo:String,
+estadVacuna:String,
+dosisAplicadas:String,
+ciudadNombre:String,
 date:{type:Date,default:Date.now} 
 
 })
 //Convertir modelo 
-module.exports= mongoose.model('vacunados',PrimeroasecSchema) 
+module.exports= mongoose.model('primeroasec',VacunadosSchema) 
