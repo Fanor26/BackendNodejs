@@ -3,7 +3,7 @@
 const mongoose = require('mongoose');
 
 URI =
-  'mongosh "mongodb://mongo:plpT9Qnq6OWBidG4M3Mg@containers-us-west-35.railway.app:5843"';
+  'mongodb://mongo:plpT9Qnq6OWBidG4M3Mg@containers-us-west-35.railway.app:5843';
 
 mongoose
   .connect(URI, {
