@@ -8,7 +8,7 @@ require("./database");
 
 //Configuracion del puerto
 
-app.set("Port", process.env.PORT || 4000);
+app.set("Port", process.env.PORT || 5000);
 app.use(morgan("dev"));
 app.use(bodyparser.urlencoded({ extended: true }));
 app.use(bodyparser.json());

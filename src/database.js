@@ -2,7 +2,7 @@
 
 const mongoose = require('mongoose')
 
-URI ='mongodb+srv://fanor2022:fanor2022@cluster0.zcdns.mongodb.net/Vacunados?retryWrites=true&w=majority'
+URI = 'mongodb+srv://sistemita:fanoro@cluster0.j7bgf.mongodb.net/?retryWrites=true&w=majority';
 
 
 
